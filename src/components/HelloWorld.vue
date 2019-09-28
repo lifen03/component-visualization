@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    {{msg}}
+    <h3>{{msg}}</h3>
+    <div v-html="iframe"></div>
   </div>
 </template>
 
@@ -8,7 +9,8 @@
 export default {
   name: "HelloWorld",
   props: {
-    msg: String
+    msg: String,
+    iframe: String
   }
 };
 </script>
